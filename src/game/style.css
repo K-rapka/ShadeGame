@@ -6,12 +6,44 @@
   border: 1px solid black;
   margin: 5px;
   box-sizing: border-box;
+  transition: background-color 0.5s ease;
+  opacity: 0;
+  animation: ani 2.5s forwards;
 }
 
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .grid {
   display: flex;
 }
 
 .imposter {
   background-color: red;
+}
+
+.startButton {
+  border-radius: 15px;
+  width: 100px;
+  height: 50px;
+  background-color: aliceblue;
+  border: 3px solid rgb(69, 69, 157);
+  color: rgb(69, 69, 157);
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.startButton:hover {
+  background-color: rgb(203, 231, 255);
 }/*# sourceMappingURL=style.css.map */

@@ -11,7 +11,6 @@ export function createGrid(currentLevel:number){
             grid[i].push(0)
         }
     }
-
     grid[getRandomInt(grid.length)][getRandomInt(grid.length)] = 1
 
 
