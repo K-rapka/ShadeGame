@@ -3,5 +3,4 @@ export interface ICircle{
     step: number
     setStep:React.Dispatch<React.SetStateAction<number>>
     setLevel:React.Dispatch<React.SetStateAction<number>>
-    setScreen:React.Dispatch<React.SetStateAction<number>>
 }

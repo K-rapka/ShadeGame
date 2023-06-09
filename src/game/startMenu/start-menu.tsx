@@ -1,7 +1,11 @@
+import { ScreenContext } from "../providers/screen-provider";
 import { IScreen } from "../types/screen.interface";
+import {useContext} from 'react'
 
+export function StartMenu({}:IScreen):JSX.Element{
 
-export function StartMenu({setScreen}:IScreen):JSX.Element{
+    const {setScreen} = useContext(ScreenContext)
+
     function handleClick(){
         setScreen(1)
     }

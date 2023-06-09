@@ -1,16 +1,19 @@
 import { GameDisplay } from "./gameDisplay/game-display"
+import { ScreenContext } from "./providers/screen-provider"
 import { StartMenu } from "./startMenu/start-menu"
-import {useState} from 'react'
+import {useState,useContext} from 'react'
 
 export function Game():JSX.Element | null{
-    const [screen, setScreen] = useState(0)
+    const {screen} = useContext(ScreenContext)
+
+    
 
     if(screen == 0){
-        return <StartMenu setScreen={setScreen}/>
+        return <StartMenu/>
     }
 
     else if(screen == 1){
-        return <GameDisplay setScreen={setScreen}/>
+        return <GameDisplay/>
     }
     else if(screen == 2){
         return <div></div>

@@ -1,6 +1,9 @@
+import { ScreenContext } from "../../../providers/screen-provider"
 import { ICircle } from "../../../types/circle.interface" 
+import {useContext} from 'react'
 
-export function Circle({imposter,step,setStep,setLevel,setScreen}:ICircle):JSX.Element{
+export function Circle({imposter,step,setStep}:ICircle):JSX.Element{
+    const {setScreen} = useContext(ScreenContext)
     //Click func
     const handleClick = ()=>{
         //Restart game
