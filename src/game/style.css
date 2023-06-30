@@ -1,9 +1,7 @@
 .circle {
-  background-color: aqua;
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 1px solid black;
   margin: 5px;
   box-sizing: border-box;
   cursor: pointer;
@@ -22,10 +20,6 @@
 }
 .grid {
   display: flex;
-}
-
-.imposter {
-  background-color: red;
 }
 
 .startButton {

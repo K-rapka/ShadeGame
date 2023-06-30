@@ -6,7 +6,8 @@ export const ScreenContext = createContext<IScreenContextValue>({} as IScreenCon
 
 const ScreenProvider  = ({children}:IChildren)=>{
     const [screen, setScreen] = useState(0)
+    const [globalScore, setGlobalScore] = useState(0)
 
-    return <ScreenContext.Provider value={{screen, setScreen}}>{children}</ScreenContext.Provider>
+    return <ScreenContext.Provider value={{screen, setScreen,globalScore, setGlobalScore}}>{children}</ScreenContext.Provider>
 }
 export default ScreenProvider
